@@ -87,6 +87,9 @@ extern const struct flash_device flash_devices[];
 #define SPIFLASH_PAGE_PROGRAM	0x02 /* Page Program */
 #define SPIFLASH_FAST_READ		0x0B /* Fast Read */
 #define SPIFLASH_READ			0x03 /* Normal Read */
+#define SPIFLASH_RESET_ENABLE	0x66
+#define SPIFLASH_RESET_MEMORY	0x99
+#define SPIFLASH_SECTOR_ERASE	0xd8
 
 #define SPIFLASH_DEF_PAGESIZE	256  /* default for non-page-oriented devices (FRAMs) */
 
